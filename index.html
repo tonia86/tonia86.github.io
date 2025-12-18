@@ -1,0 +1,292 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <title>Ni Tang - Personal Homepage</title>
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  <!-- 引入 Google Fonts 字体 -->
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+
+  <style>
+    /* ========== 全局样式 ========== */
+    body {
+      font-family: 'Roboto', 'Lato', sans-serif;
+      background-color: #ffffff;
+      color: #333;
+      font-size: 16px;
+      line-height: 1.6;
+      margin: 0;
+      padding: 0;
+    }
+
+    /* 容器 */
+    .container {
+      max-width: 960px;
+      margin: 0 auto;
+      padding: 40px 20px;
+    }
+
+    /* 链接颜色 */
+    a {
+      color: #1a0dab;
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+
+    /* 标题 */
+    h1, h2, h3 {
+      font-family: 'Lato', sans-serif;
+      font-weight: 700;
+      margin-bottom: 15px;
+      color: #000;
+    }
+    
+    h2 {
+      border-bottom: 1px solid #eaeaea;
+      padding-bottom: 10px;
+      margin-top: 40px;
+    }
+
+    /* ========== 简介区域 ========== */
+    .profile-section {
+      display: flex;
+      align-items: flex-start;
+      margin-bottom: 40px;
+    }
+
+    .profile-text {
+      flex: 1;
+      padding-right: 30px;
+    }
+
+    .profile-text p {
+      margin-bottom: 15px;
+      text-align: justify;
+    }
+
+    .profile-links {
+      margin-top: 15px;
+    }
+    
+    .profile-links a {
+      margin-right: 15px;
+      font-weight: 500;
+      display: inline-block; /* 保持整齐 */
+    }
+
+    .profile-img {
+      width: 250px;
+      flex-shrink: 0;
+    }
+
+    .profile-img img {
+      width: 100%;
+      border-radius: 50%; 
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    }
+
+    /* ========== 新闻区域 ========== */
+    .news-item {
+      margin-bottom: 10px;
+    }
+    .news-date {
+      font-weight: bold;
+      color: #555;
+      margin-right: 10px;
+      min-width: 80px;
+      display: inline-block;
+    }
+
+    /* ========== 论文列表区域 ========== */
+    .pub-item {
+      display: flex;
+      margin-bottom: 30px;
+      align-items: flex-start;
+    }
+
+    .pub-thumb {
+      width: 220px;
+      margin-right: 20px;
+      flex-shrink: 0;
+      border: 1px solid #eee;
+      padding: 4px;
+    }
+
+    .pub-thumb img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    .pub-info {
+      flex: 1;
+    }
+
+    .pub-title {
+      font-weight: 700;
+      font-size: 1.1em;
+      margin-bottom: 5px;
+      color: #000;
+    }
+
+    .pub-authors {
+      color: #555;
+      margin-bottom: 5px;
+    }
+
+    .pub-venue {
+      font-style: italic;
+      color: #666;
+      margin-bottom: 8px;
+    }
+
+    .pub-links a {
+      display: inline-block;
+      margin-right: 10px;
+      font-size: 0.9em;
+      color: #1a0dab;
+      border: 1px solid #1a0dab;
+      padding: 1px 6px;
+      border-radius: 3px;
+    }
+    .pub-links a:hover {
+      background-color: #1a0dab;
+      color: white;
+      text-decoration: none;
+    }
+    
+    .highlight-me {
+      font-weight: bold;
+      color: #000;
+      text-decoration: underline;
+    }
+
+    /* ========== 底部联系区域 ========== */
+    .contact-section {
+      margin-top: 50px;
+      padding-top: 20px;
+      border-top: 1px solid #eaeaea;
+      color: #444;
+    }
+
+    /* 手机端适配 */
+    @media (max-width: 768px) {
+      .profile-section {
+        flex-direction: column-reverse;
+        align-items: center;
+        text-align: center;
+      }
+      .profile-text {
+        padding-right: 0;
+      }
+      .profile-img {
+        margin-bottom: 20px;
+        width: 180px;
+      }
+      .pub-item {
+        flex-direction: column;
+      }
+      .pub-thumb {
+        width: 100%;
+        max-width: 300px;
+        margin-bottom: 15px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="container">
+    
+    <!-- 1. 个人简介部分 -->
+    <div class="profile-section">
+      <div class="profile-text">
+        <!-- 我根据你的邮箱猜测名字为 Ni Tang，如果不对请在这里修改 -->
+        <h1 style="font-size: 2.5em; margin-bottom: 15px;">Ni Tang (唐妮)</h1>
+        
+        <p>
+          I am currently a Ph.D. student at the <strong>School of Informatics, Xiamen University</strong>. 
+          I received my M.S. degree in 2024 from the School of Science, Jimei University, supervised by Assoc. Prof. <a href="#">Dongxiao Zhang</a>.
+        </p>
+        
+        <p>
+          My research interests include, but are not limited to, <strong>computer vision</strong> (image restoration) and <strong>machine learning</strong> (unsupervised learning and continual learning). 
+          Recently, my research has focused on <strong>underwater image enhancement</strong>, <strong>diffusion models</strong>, and <strong>all-in-one image restoration</strong>.
+        </p>
+
+        <div class="profile-links">
+          <!-- 邮箱 -->
+          <a href="mailto:nitang@stu.xmu.edu.cn">Email</a> / 
+          <!-- GitHub -->
+          <a href="https://github.com/tonia86">GitHub</a> /
+          <!-- ORCID -->
+          <a href="https://orcid.org/0009-0007-9791-3461">ORCID</a>
+        </div>
+      </div>
+
+      <div class="profile-img">
+        <!-- 请务必放一张你的照片，命名为 avatar.jpg 并放在同一目录下 -->
+        <img src="images/avatar.jpg" alt="Ni Tang" onerror="this.src='https://via.placeholder.com/250?text=Ni+Tang'">
+      </div>
+    </div>
+
+    <!-- 2. 新闻动态 -->
+    <h2>News</h2>
+    <div class="news-list">
+      <div class="news-item">
+        <span class="news-date">[Dec 2025]</span>
+        One paper titled <strong>"Diffusion Once and Done"</strong> was accepted to <strong>AAAI 2026</strong>!
+      </div>
+    </div>
+
+    <!-- 3. 论文列表 -->
+    <h2>Publications</h2>
+    
+    <!-- 论文 AAAI 2026 -->
+    <div class="pub-item">
+      <div class="pub-thumb">
+        <!-- 请放一张论文的演示图，命名为 dod.jpg -->
+        <img src="images/dod.jpg" alt="DOD Teaser" onerror="this.src='https://via.placeholder.com/300x160?text=Paper+Image'">
+      </div>
+      <div class="pub-info">
+        <div class="pub-title">Diffusion Once and Done: Degradation-Aware LoRA for All-in-One Image Restoration</div>
+        <div class="pub-authors">
+          <!-- 请在这里补充其他作者的名字，我暂时把你放在第一位 -->
+          <span class="highlight-me">Ni Tang</span>, Dongxiao Zhang, et al. (请补全其他作者)
+        </div>
+        <div class="pub-venue">
+          AAAI Conference on Artificial Intelligence (AAAI), 2026
+        </div>
+        <div class="pub-links">
+          <a href="https://arxiv.org/abs/2508.03373">arXiv</a>
+          <a href="https://github.com/tonia86/DOD">Code</a>
+        </div>
+        <p style="font-size: 0.9em; color: #444; margin-top: 8px;">
+          We propose a degradation-aware LoRA approach for efficient all-in-one image restoration using diffusion models.
+        </p>
+      </div>
+    </div>
+
+    <!-- 4. 底部联系信息 -->
+    <div class="contact-section">
+      <p>
+        If you are interested in my research or would like to discuss potential applications or collaborations, please feel free to contact me.
+        <br>
+        📧 <strong>Email:</strong> <a href="mailto:nitang@stu.xmu.edu.cn">nitang@stu.xmu.edu.cn</a>
+      </p>
+    </div>
+    
+    <!-- 页脚 -->
+    <div style="text-align: center; margin-top: 60px; color: #999; font-size: 0.8em;">
+      <p>&copy; 2025 Ni Tang. Last updated: Dec 2025.</p>
+    </div>
+
+  </div>
+
+</body>
+</html>
